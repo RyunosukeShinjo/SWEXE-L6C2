@@ -1,0 +1,10 @@
+<%= @carts.each do |f| %>
+<p>
+    <%= Product.find(f.product_id).name %>
+    <%= Product.find(f.product_id).price %>円
+    <%= f.qty %>
+</p>
+<% end %>
+<p>
+    <%= link_to "商品一覧ページ", '/' %>
+</p>
